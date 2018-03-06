@@ -1,17 +1,29 @@
-![fordintysa logo](http://www.bertkoor.nl/fordintysa.png)
+# README #
 
-# Workshop Continuous Integration
+This README would normally document whatever steps are necessary to get your application up and running.
 
-This repository contains everything you need for the workshop Continuous Integration, developed by Ordina JTech for Fontys Hogeschool.
+### What is this repository for? ###
 
-Using Docker we'll spin up a preconfigured build server on your own computer, containing GitLab, Jenkins with Maven, SonarQube and Artifactory.
+* Quick summary
+* Version
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-The Java software we're going to build is also contained in this repository. You can use your favorite IDE and Git client, or edit directly the source code in GitLab. More on that later.
+### How do I get set up? ###
 
-## Preparation
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
 
-Students visiting Ordina at 21st or 23rd Feb 2018 will receive an USB memory stick containing a VirtualBox image. 
-Instructions on how to spin that up will be shipped in a PDF on that stick.
+### Contribution guidelines ###
 
-However, if you're reading this page on GitHub, you'll have to do some installation yourself. 
-Please follow the instructions on the [Getting Started](https://github.com/Ordina-JTech/fordintysa-ci/wiki/GettingStarted) wiki page of this repository.
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact

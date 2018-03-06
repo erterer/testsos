@@ -1,0 +1,10 @@
+boundary\rest\CoffeeResource.class
+dao\CoffeeDao.class
+service\CoffeeService.class
+domain\Coffee_.class
+util\CoffeeEvent.class
+service\Monitor.class
+util\Init.class
+domain\Coffee.class
+boundary\rest\MonitorResource.class
+boundary\rest\JAXRSconfig.class
