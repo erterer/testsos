@@ -16,13 +16,13 @@ import javax.persistence.PersistenceContext;
  * @author 878550
  */
 @Stateless
-public class CoffeeDao {;
+public class CoffeeDao {
 
     @PersistenceContext
     EntityManager em;
 
     public List<Coffee> allCoffee() {
-        return em.createNamedQuery("Coffee.allCoffee").getResultList();
+        return em.createNamedQuery("Coffee.allCoffee").getResultList();;
     }
 
     public void save(Coffee c) {
