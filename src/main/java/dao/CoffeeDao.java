@@ -16,7 +16,7 @@ import javax.persistence.PersistenceContext;
  * @author 878550
  */
 @Stateless
-public class CoffeeDao {
+public class CoffeeDao {;
 
     @PersistenceContext
     EntityManager em;
