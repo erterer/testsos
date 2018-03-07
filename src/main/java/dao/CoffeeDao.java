@@ -22,7 +22,7 @@ public class CoffeeDao {
     EntityManager em;
 
     public List<Coffee> allCoffee() {
-        return em.createNamedQuery("Coffee.allCoffee").getResultList();;
+        return em.createNamedQuery("Coffee.allCoffee").getResultList();
     }
 
     public void save(Coffee c) {
