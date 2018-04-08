@@ -3,7 +3,7 @@
   <display-name>fordintysa-webapp</display-name>
   <servlet>
       <servlet-name>PrometheusEndpoint</servlet-name>
-      <servlet-class>io.prometheus.client.exporter.MetricServlet</servlet-class>
+      <servlet-class>io.prometheus.client.exporter.MetricsServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
