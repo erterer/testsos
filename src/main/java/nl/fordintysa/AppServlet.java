@@ -19,7 +19,7 @@ public class AppServlet extends HttpServlet {
 	private static final long serialVersionUID = -6153259490501984924L;
 
         private static final Counter httpRequestsTotal = Counter
-                .build("http_requests_total", "Total number of HTTP requests")
+                .build("http_requests_total_prom", "Total number of HTTP requests")
                 .labelNames("path")
                 .register();
 	/**
