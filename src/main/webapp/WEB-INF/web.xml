@@ -4,4 +4,13 @@
   <welcome-file-list>
     <welcome-file>app</welcome-file>
   </welcome-file-list>
+  <servlet>
+      <servlet-name>PrometheusEndpoint</servlet-name>
+      <servlet-class>io.prometheus.client.exporter.MetricServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>PrometheusEndpoint</servlet-name>
+      <url-pattern>/metrics</url-pattern>
+  </servlet-mapping>
 </web-app>

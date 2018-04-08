@@ -1,5 +1,6 @@
 package nl.fordintysa;
 
+import io.prometheus.client.Counter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -17,6 +18,10 @@ public class AppServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -6153259490501984924L;
 
+        private static final Counter httpRequestsTotal = Counter
+                .build("http_requests_total", "Total number of HTTP requests")
+                .labelNames("path")
+                .register();
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -26,7 +31,8 @@ public class AppServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		this.renderPage(req, resp);
+            httpRequestsTotal.labels("/app").inc();
+            this.renderPage(req, resp);
 	}
 
 	private void renderPage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
