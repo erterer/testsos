@@ -36,7 +36,8 @@ public class AppServlet extends HttpServlet {
 	}
 
 	private void renderPage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-		PrintWriter out = resp.getWriter();
+            httpRequestsTotal.labels("/app").inc();	
+            PrintWriter out = resp.getWriter();
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		renderFromResource(out, "head.htf");
